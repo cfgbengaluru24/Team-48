@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const QuerySchema = new mongoose.Schema({
     studentId: {
         type: mongoose.Schema.Types.ObjectId,
+        ref : 'Student',
         required: true
     },
     heading: {
@@ -10,7 +11,7 @@ const QuerySchema = new mongoose.Schema({
         default : "Urgent Query"
     },
     query: {
-        type: [String],
+        type: String,
         required : true
     },
     severity: {
@@ -23,4 +24,4 @@ const QuerySchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Query', querySchema)
+module.exports = mongoose.model('Query', QuerySchema)
