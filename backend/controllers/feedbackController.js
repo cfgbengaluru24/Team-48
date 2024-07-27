@@ -3,20 +3,26 @@ const mongoose = require("mongoose");
 const multer = require("multer");
 const csvParser = require("csv-parser");
 const fs = require("fs");
-const Feedback = require("./models/Feedback"); // Adjust the path as necessary
+const Feedback = require('../models/Feedback');
+// Adjust the path as necessary
 const { Configuration, OpenAIApi } = require("openai");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 const dotenv = require("dotenv");
 dotenv.config();
 const upload = require("../utils/fileUpload");
 const router = express.Router();
 
-const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY, // Make sure to set this environment variable
-});
-const openai = new OpenAIApi(configuration);
+const genAI = new GoogleGenerativeAI(process.env.OPENAI_API_KEY);
+const model = genAI.getGenerativeModel({model: 'gemini-1.5-flash'});
 
-router.post("/upload", upload.single("file"), async (req, res) => {
+const bulkAddFeedback = async(req,res) => {
   try {
+    if(!req.file){
+      throw new Error({
+        success: false,
+        message: "No file given"
+      })
+    }
     const fileRows = [];
     const additionalFeedbacks = [];
     const weekNumbers = [];
@@ -42,7 +48,10 @@ router.post("/upload", upload.single("file"), async (req, res) => {
             feedback: row.feedback,
             additionalFeedback: row.additionalFeedback,
           });
-          await feedback.save();
+          try
+          {await feedback.save();}catch(err){
+            console.error("Error while saving a query",err);
+          }
         }
 
         // Summarize the additional feedback
@@ -52,24 +61,26 @@ router.post("/upload", upload.single("file"), async (req, res) => {
           Please provide a concise summary of the feedbacks above.
         `;
 
-        const summaryResponse = await openai.createCompletion({
-          model: "text-davinci-003",
-          prompt: prompt,
-          max_tokens: 150,
-        });
-
-        const summary = summaryResponse.data.choices[0].text.trim();
-
+        const genAiResult = await model.generateContent(prompt);
+        const genAiResponse = await genAiResult.response;
+        const text = genAiResponse.text();
+        console.log(text);
         res.status(200).json({
+          success: true,
           message: "File processed successfully",
-          averageWeekNo: avgWeekNo,
-          additionalFeedbacks,
-          summary,
+          data: {
+            averageWeekNo: avgWeekNo,
+            additionalFeedbacks,
+            summary: text,
+          }
         });
       });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.log(error);
+    res.status(400).json({ message: 'File not given! or some other error', success: false });
   }
-});
+}
 
-module.exports = router;
+module.exports = {
+  bulkAddFeedback
+}
