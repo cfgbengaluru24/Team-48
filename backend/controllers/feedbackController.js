@@ -7,7 +7,7 @@ const Feedback = require("./models/Feedback"); // Adjust the path as necessary
 const { Configuration, OpenAIApi } = require("openai");
 const dotenv = require("dotenv");
 dotenv.config();
-
+const upload = require("../utils/fileUpload");
 const router = express.Router();
 
 const configuration = new Configuration({
