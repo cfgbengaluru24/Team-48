@@ -1,10 +1,11 @@
-const Query = require('../models/queryModel');
+const Query = require('../models/Query');
 
 exports.createQuery = async (req, res) => {
+  // console.log(req.body)
   try {
     const { studentId, heading, query, severity } = req.body;
     const newQuery = await Query.create({ studentId, heading, query, severity });
-
+    
     
     const responsePayload = {
       message: 'Query created successfully',

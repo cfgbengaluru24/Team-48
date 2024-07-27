@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 
 const QuerySchema = new mongoose.Schema({
     studentId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref : 'Student',
+        // type: mongoose.Schema.Types.ObjectId,
+        type:String,
         required: true
     },
     heading: {
@@ -15,7 +15,7 @@ const QuerySchema = new mongoose.Schema({
         required : true
     },
     severity: {
-        type: int,
+        type: Number,
         default: 3
     },
     status:{
