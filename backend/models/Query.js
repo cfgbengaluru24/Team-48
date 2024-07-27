@@ -11,7 +11,7 @@ const QuerySchema = new mongoose.Schema({
         default : "Urgent Query"
     },
     query: {
-        type: [String],
+        type: String,
         required : true
     },
     severity: {

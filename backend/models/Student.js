@@ -25,6 +25,15 @@ const studentSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true
+    },
+    resume: {
+        type: String
+    },
+    github_link: {
+        type: String
+    },
+    linkedin_profile: {
+        type: String
     }
 })
 

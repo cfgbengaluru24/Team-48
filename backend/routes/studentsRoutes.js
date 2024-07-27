@@ -5,7 +5,8 @@ const studentController = require('../controllers/studentsController');
 
 router.post('/', studentController.createStudent);
 
-
 router.get('/:studentID', studentController.getStudentById);
+
+router.post('/:studentId/upload-resume', upload.single('resume'), studentController.uploadResume);
 
 module.exports = router;
