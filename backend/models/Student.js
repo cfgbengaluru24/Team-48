@@ -8,19 +8,15 @@ const studentSchema = new mongoose.Schema({
     },
     name: {
         type: String,
-        required: true
     },
     college: {
         type: String,
-        required : true
     },
     address: {
         type: String,
-        required: true
     },
     phone: {
         type: Number,
-        rewuired : true
     },
     email: {
         type: String,
