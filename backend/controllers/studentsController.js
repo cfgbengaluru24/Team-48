@@ -1,4 +1,5 @@
 const Student = require('../models/Student');
+const Test = require('../models/Test');
 
 
 const createStudent = async (req, res) => {
@@ -46,8 +47,54 @@ const uploadResume = async (req, res) => {
     }
   }
 
+const getTestMarksByTestId = async(req,res) => {
+  const {testId} = req.params;
+  if(!testId){
+    res.end(400).json({
+      success: false,
+      message: "No test id send"
+    })
+  }
+  const test = await Test.findOne({testId});
+  if(!test){
+    res.end(400).json({
+      success: false,
+      message: 'No test found',
+    })
+  }
+  res.send(200).json({
+    success: true,
+    message: "Test found successfully",
+    data: test
+  })
+}
+
+const getTestMarksByStudentId = async(req,res) => {
+  const {studentId} = req.params;
+  if(!studentId){
+    res.end(400).json({
+      success: false,
+      message: "No student id send"
+    })
+  }
+  const test = await Test.findOne({studentId});
+  if(!test){
+    res.end(400).json({
+      success: false,
+      message: 'No test found',
+    })
+  }
+  res.send(200).json({
+    success: true,
+    message: "Test found successfully",
+    data: test
+  })
+}
+
 module.exports = {
   createStudent,
   getStudentById,
-  uploadResume
+  uploadResume,
+  getTestMarksByStudentId,
+  getTestMarksByTestId
 };

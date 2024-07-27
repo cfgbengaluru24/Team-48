@@ -5,7 +5,7 @@ const adminController = require('../controllers/adminController');
 
 router.get('/tests', adminController.getAllTestScores);
 
-router.get('/tests', adminController.getQueryById);
+router.get('/tests/:id', adminController.getQueryById);
 
 router.get('/queries', adminController.getAllQueries);
 

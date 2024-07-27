@@ -4,10 +4,14 @@ const Query = require('../models/Query');
 
 const getAllTestScores = async (req, res) => {
   try {
-    const tests = await Test.find().populate('Student', 'studentId name');
-    res.json(tests);
+    const tests = await Test.findMany();
+    res.json({
+      success: true,
+      message: "Here are all the tests scores",
+      data: tests
+    });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(500).json({ message: err.message, success: false });
   }
 };
 
@@ -27,9 +31,13 @@ const getQueryById = async (req, res) => {
         return res.status(404).json({ message: 'Query not found.' });
       }
   
-      res.json(query);
+      res.json({
+        success: true,
+        message: "Here is the asked query",
+        data: query
+      });
     } catch (err) {
-      res.status(500).json({ message: err.message });
+      res.status(500).json({ message: err.message, success: false });
     }
   };
 
@@ -37,9 +45,13 @@ const getQueryById = async (req, res) => {
 const getAllQueries = async (req, res) => {
   try {
     const queries = await Query.find().populate('student', 'studentId name');
-    res.json(queries);
+    res.json({
+      success: true,
+      message: "Fetched all queries",
+      data: queries
+    });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(500).json({ message: err.message, success: false });
   }
 };
 
@@ -52,10 +64,10 @@ const updateQueryStatus = async (req, res) => {
       return res.status(404).json({ message: 'Query not found!' });
     }
     query.status = status;
-    await query.save();
-    res.json({ message: 'Query status updated successfully!' });
+    const updatedQuery = await query.save();
+    res.json({ message: 'Query status updated successfully!',success: true,data: updatedQuery });
   } catch (err) {
-    res.status(400).json({ message: err.message });
+    res.status(400).json({ message: err.message,success: false, });
   }
 };
 
