@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const QuerySchema = new mongoose.Schema({
-    studentID: {
+    studentId: {
         type: mongoose.Schema.Types.ObjectId,
         required: true
     },
@@ -19,7 +19,7 @@ const QuerySchema = new mongoose.Schema({
     },
     status:{
         type: Boolean,
-        default: true
+        default: false
     }
 })
 
