@@ -5,6 +5,7 @@ const registerRoutes = require('./registerRoutes.js');
 const queryRoutes = require('./queryRoutes.js');
 const adminRoutes = require('./adminRoutes.js');
 const feedbackRoutes = require("./feedbackRoutes.js");
+const authRoutes = require('./authRoutes.js');
 
 const router = express.Router();
 
@@ -14,5 +15,6 @@ router.use('/register', registerRoutes);
 router.use('/query', queryRoutes);
 router.use('/admin',adminRoutes);
 router.use('/feedback',feedbackRoutes);
+router.use('/auth',authRoutes);
 
 module.exports = router;
