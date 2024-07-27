@@ -13,4 +13,8 @@ router.post(
   studentController.uploadResume
 );
 
+router.get('/test/student/:studentId',studentController.getTestMarksByStudentId);
+
+router.get('/test/:testId',studentController.getTestMarksByTestId);
+
 module.exports = router;
