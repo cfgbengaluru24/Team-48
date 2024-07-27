@@ -15,6 +15,7 @@ const createStudent = async (req, res) => {
 
 const getStudentById = async (req, res) => {
   const { studentId } = req.params;
+  console.log(req.body)
   try {
     const student = await Student.findOne({ studentId });
     if (!student) {
