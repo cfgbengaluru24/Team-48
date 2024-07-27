@@ -13,7 +13,6 @@ const testSchema = new mongoose.Schema({
     testScore: {
       type: Number,
       required: true,
-      min: 0,
     },
     testName: {
       type: String,
@@ -27,4 +26,3 @@ const testSchema = new mongoose.Schema({
   });
   
   module.exports = mongoose.model('Test', testSchema);
-  
