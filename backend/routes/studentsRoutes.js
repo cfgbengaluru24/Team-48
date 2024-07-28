@@ -3,9 +3,8 @@ const router = express.Router();
 const studentController = require("../controllers/studentsController");
 const upload = require("../utils/fileUpload");
 
-router.post("/", studentController.createStudent);
-
-router.get("/:studentID", studentController.getStudentById);
+router.get("/:studentId", studentController.getStudentById);
+router.post('/email', studentController.getStudentByEmail);
 
 router.post(
   "/:studentId/upload-resume",
@@ -16,5 +15,7 @@ router.post(
 router.get('/test/student/:studentId',studentController.getTestMarksByStudentId);
 
 router.get('/test/:testId',studentController.getTestMarksByTestId);
+
+router.patch('/update',studentController.updateStudent)
 
 module.exports = router;
