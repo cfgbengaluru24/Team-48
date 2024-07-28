@@ -1,23 +1,37 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function AdminSidebar() {
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    // Perform any logout logic here
-    navigate('/login');
-  };
-
   return (
-    <div className="min-h-screen flex flex-col bg-gray-800 text-white w-64 p-4">
-      <h2 className="text-2xl font-bold mb-8">Admin Dashboard</h2>
-      <nav className="flex flex-col gap-4">
-        <Link to="/admin" className="hover:bg-gray-700 p-2 rounded">Home</Link>
-        <Link to="/admin/aptitude-questions" className="hover:bg-gray-700 p-2 rounded">Aptitude Questions</Link>
-        <Link to="/admin/marks-dashboard" className="hover:bg-gray-700 p-2 rounded">Marks Dashboard</Link>
-        <button onClick={handleLogout} className="hover:bg-gray-700 p-2 rounded">Logout</button>
-      </nav>
+    <div className="bg-blue-800 text-white w-64 min-h-screen p-6">
+      <h2 className="text-2xl font-bold mb-6">Admin Portal</h2>
+      <ul>
+        <li className="mb-4">
+          <Link to="/admin/home" className="text-white hover:text-gray-300">
+            Home
+          </Link>
+        </li>
+        <li className="mb-4">
+          <Link to="/admin/aptitude-questions" className="text-white hover:text-gray-300">
+            Aptitude Questions
+          </Link>
+        </li>
+        <li className="mb-4">
+          <Link to="/admin/marks-dashboard" className="text-white hover:text-gray-300">
+            Marks Dashboard
+          </Link>
+        </li>
+        <li className="mb-4">
+          <Link to="/admin/placement-portal" className="text-white hover:text-gray-300">
+            Placement Portal
+          </Link>
+        </li>
+        <li>
+          <Link to="/logout" className="text-white hover:text-gray-300">
+            Logout
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }

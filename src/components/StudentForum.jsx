@@ -1,7 +1,7 @@
 import React from 'react';
 import StudentLayout from './StudentLayout';
 
-function StudentPortal() {
+function StudentForum() {
   return (
     <StudentLayout>
       <h1 className="text-4xl font-bold mb-4">Forum Section</h1>
@@ -10,4 +10,4 @@ function StudentPortal() {
   );
 }
 
-export default StudentPortal;
+export default StudentForum;

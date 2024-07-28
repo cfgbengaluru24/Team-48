@@ -11,7 +11,7 @@ import StudentForum from './components/StudentForum';
 import AdminHome from './components/AdminHome';
 import AdminAptitudeQuestions from './components/AdminAptitudeQuestions';
 import AdminMarksDashboard from './components/AdminMarksDashboard';
-// import AdminPortal from './components/AdminPortal';
+import AdminPlacementPortal from './components/AdminPlacementPortal';
 import NavBar from './components/NavBar';
 import './App.css';
 
@@ -31,7 +31,7 @@ function App() {
           <Route path="/admin/home" element={<AdminHome />} />
           <Route path="/admin/aptitude-questions" element={<AdminAptitudeQuestions />} />
           <Route path="/admin/marks-dashboard" element={<AdminMarksDashboard />} />
-          {/* <Route path="/admin/portal" element={<AdminPortal />} /> */}
+          <Route path="/admin/placement-portal" element={<AdminPlacementPortal />} />
         </Routes>
       </div>
     </Router>
