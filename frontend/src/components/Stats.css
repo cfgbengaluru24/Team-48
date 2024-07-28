@@ -1,0 +1,67 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+#quote {
+    font-size: 10pt;
+    color: #848484;
+    letter-spacing: 0px;
+}
+
+.number {
+    width: 46%;
+    font-size: 40pt;
+    position: relative;
+    float: left;
+    text-align: right;
+    overflow: hidden;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.type {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5pt;
+    padding-top: 19px;
+    width: 46%;
+    float: left;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    font-size: 20pt;
+    padding-left: 15px;
+
+}
+
+.details {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+.statbox div {
+    /* float:left; */
+}
+
+.statbox {
+    height: 90px;
+    background: -webkit-linear-gradient(#120F0F, #151212);
+    background: -o-linear-gradient(#120F0F, #151212);
+    background: -moz-linear-gradient(#120F0F, #151212);
+    background: linear-gradient(#120F0F, #151212);
+
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 30pt;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+#page {
+    height: 500px;
+}

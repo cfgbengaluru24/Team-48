@@ -18,6 +18,7 @@ import AttendancePage from './components/AdminAttendance';
 import AdminDashboard from './components/AdminDashboard';
 import HeatmapComponent from './components/AdminHeatmap';
 import './App.css';
+import Statistics from './components/Stats';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/portal" element={<AdminPortal />} />
           <Route path="admin/attendance" element={<AttendancePage />} />
+          <Route path="stats" element={<Statistics />} />
 
           <Route path="/succes" element={<SuccessStories />} />
           <Route path="/heatmap" element={<HeatmapComponent />} />
