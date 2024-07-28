@@ -9,8 +9,7 @@ import StudentPlacement from './components/StudentPlacement';
 import StudentPortal from './components/StudentPortal';
 import AdminHome from './components/AdminHome';
 import AdminAptitudeQuestions from './components/AdminAptitudeQuestions';
-// import AdminMarksDashboard from './components/AdminMarksDashboard';
-// import AdminPortal from './components/AdminPortal';
+import AdminMarksDashboard from './components/AdminMarksDashboard';
 import SuccessStories from './components/Successstory';
 import NavBar from './components/NavBar';
 import AdminPortal from './components/AdminPortal';
@@ -31,14 +30,10 @@ function App() {
           <Route path="/student/portal" element={<StudentPortal />} />
           <Route path="/admin/home" element={<AdminHome />} />
           <Route path="/admin/aptitude-questions" element={<AdminAptitudeQuestions />} />
-          {/* <Route path="/admin/marks-dashboard" element={<AdminMarksDashboard />} /> */}
+          <Route path="/admin/marks-dashboard" element={<AdminMarksDashboard />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/portal" element={<AdminPortal />} />
-
-
           <Route path="/succes" element={<SuccessStories />} />
-
-          {/* <Route path="/admin/portal" element={<AdminPortal />} /> */}
         </Routes>
       </div>
     </Router>
