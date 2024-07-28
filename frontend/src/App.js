@@ -13,7 +13,9 @@ import AdminMarksDashboard from './components/AdminMarksDashboard';
 import AdminPlacementPortal from './components/AdminPlacementPortal';
 import NavBar from './components/NavBar';
 import AdminPortal from './components/AdminPortal';
+import AttendancePage from './components/AdminAttendance';
 import AdminDashboard from './components/AdminDashboard';
+import HeatmapComponent from './components/AdminHeatmap';
 import './App.css';
 
 function App() {
@@ -31,7 +33,14 @@ function App() {
           <Route path="/admin/home" element={<AdminHome />} />
           <Route path="/admin/aptitude-questions" element={<AdminAptitudeQuestions />} />
           <Route path="/admin/marks-dashboard" element={<AdminMarksDashboard />} />
-          <Route path="/admin/placement-portal" element={<AdminPlacementPortal />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/portal" element={<AdminPortal />} />
+          <Route path="admin/attendance" element={<AttendancePage />} />
+
+          <Route path="/succes" element={<SuccessStories />} />
+          <Route path="/heatmap" element={<HeatmapComponent />} />
+        
+          {/* <Route path="/admin/portal" element={<AdminPortal />} /> */}
         </Routes>
       </div>
     </Router>
