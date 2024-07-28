@@ -1,0 +1,101 @@
+studentId,weekNo,lectureName,feedback,additionalFeedback
+ST0004,Week 6,Lecture 4,Well explained,"Great session, learned a lot!"
+ST0005,Week 8,Lecture 2,Too slow,It was hard to follow along with the pace.
+ST0017,Week 6,Lecture 5,Hard to understand,I really enjoyed the hands-on examples.
+ST0018,Week 3,Lecture 2,Well explained,"Great session, learned a lot!"
+ST0017,Week 2,Lecture 5,Boring,It was hard to follow along with the pace.
+ST0014,Week 10,Lecture 2,Interactive session,The lecture was a bit too fast for me.
+ST0012,Week 3,Lecture 4,Too fast,I think more visuals would be helpful.
+ST0008,Week 6,Lecture 5,Very helpful,I think more visuals would be helpful.
+ST0005,Week 10,Lecture 1,Could use more examples,The lecture was a bit too fast for me.
+ST0018,Week 5,Lecture 2,Interactive session,The content was a bit dry.
+ST0006,Week 10,Lecture 4,Too slow,I liked the interactive parts the most.
+ST0003,Week 4,Lecture 3,Boring,I really enjoyed the hands-on examples.
+ST0012,Week 6,Lecture 3,Well explained,I liked the interactive parts the most.
+ST0016,Week 10,Lecture 2,Great lecture,I liked the interactive parts the most.
+ST0006,Week 7,Lecture 1,Too slow,Could use more real-world examples.
+ST0014,Week 2,Lecture 1,Well explained,I liked the interactive parts the most.
+ST0004,Week 1,Lecture 2,Too slow,I really enjoyed the hands-on examples.
+ST0011,Week 7,Lecture 1,Hard to understand,Could use more real-world examples.
+ST0002,Week 10,Lecture 4,Very helpful,I really enjoyed the hands-on examples.
+ST0006,Week 7,Lecture 5,Hard to understand,I liked the interactive parts the most.
+ST0011,Week 10,Lecture 3,Great lecture,"Fantastic lecture, well done!"
+ST0001,Week 3,Lecture 4,Informative,"Great session, learned a lot!"
+ST0011,Week 1,Lecture 3,Too fast,It was hard to follow along with the pace.
+ST0017,Week 6,Lecture 4,Boring,I really enjoyed the hands-on examples.
+ST0014,Week 3,Lecture 5,Interactive session,I really enjoyed the hands-on examples.
+ST0017,Week 6,Lecture 2,Could use more examples,I really enjoyed the hands-on examples.
+ST0018,Week 8,Lecture 5,Boring,"Great session, learned a lot!"
+ST0019,Week 5,Lecture 4,Too slow,I think more visuals would be helpful.
+ST0007,Week 2,Lecture 1,Interactive session,"Great session, learned a lot!"
+ST0011,Week 8,Lecture 3,Too fast,I think more visuals would be helpful.
+ST0017,Week 8,Lecture 5,Well explained,The examples were very clear and useful.
+ST0010,Week 9,Lecture 4,Boring,Could use more real-world examples.
+ST0010,Week 10,Lecture 1,Informative,The examples were very clear and useful.
+ST0016,Week 1,Lecture 5,Hard to understand,"Great session, learned a lot!"
+ST0014,Week 5,Lecture 2,Could use more examples,"Great session, learned a lot!"
+ST0008,Week 2,Lecture 1,Interactive session,The examples were very clear and useful.
+ST0013,Week 2,Lecture 3,Very helpful,"Great session, learned a lot!"
+ST0010,Week 5,Lecture 1,Interactive session,I liked the interactive parts the most.
+ST0004,Week 6,Lecture 4,Hard to understand,I think more visuals would be helpful.
+ST0013,Week 10,Lecture 2,Could use more examples,"Fantastic lecture, well done!"
+ST0011,Week 2,Lecture 5,Too fast,I think more visuals would be helpful.
+ST0009,Week 3,Lecture 5,Hard to understand,The lecture was a bit too fast for me.
+ST0006,Week 4,Lecture 2,Interactive session,"Fantastic lecture, well done!"
+ST0012,Week 3,Lecture 3,Could use more examples,I think more visuals would be helpful.
+ST0006,Week 10,Lecture 4,Very helpful,I really enjoyed the hands-on examples.
+ST0013,Week 2,Lecture 4,Well explained,I really enjoyed the hands-on examples.
+ST0012,Week 5,Lecture 5,Very helpful,The examples were very clear and useful.
+ST0014,Week 1,Lecture 1,Could use more examples,"Great session, learned a lot!"
+ST0008,Week 4,Lecture 5,Boring,Could use more real-world examples.
+ST0018,Week 9,Lecture 3,Great lecture,The examples were very clear and useful.
+ST0009,Week 7,Lecture 4,Informative,I think more visuals would be helpful.
+ST0014,Week 5,Lecture 2,Boring,The lecture was a bit too fast for me.
+ST0015,Week 7,Lecture 5,Informative,I liked the interactive parts the most.
+ST0008,Week 3,Lecture 2,Could use more examples,I really enjoyed the hands-on examples.
+ST0009,Week 3,Lecture 1,Interactive session,"Fantastic lecture, well done!"
+ST0019,Week 9,Lecture 2,Interactive session,Could use more real-world examples.
+ST0001,Week 8,Lecture 2,Very helpful,I liked the interactive parts the most.
+ST0018,Week 3,Lecture 5,Very helpful,"Fantastic lecture, well done!"
+ST0008,Week 6,Lecture 5,Too fast,I liked the interactive parts the most.
+ST0020,Week 1,Lecture 3,Informative,The lecture was a bit too fast for me.
+ST0003,Week 3,Lecture 1,Great lecture,I think more visuals would be helpful.
+ST0016,Week 6,Lecture 1,Very helpful,The lecture was a bit too fast for me.
+ST0004,Week 5,Lecture 1,Boring,I think more visuals would be helpful.
+ST0001,Week 7,Lecture 4,Could use more examples,"Great session, learned a lot!"
+ST0001,Week 1,Lecture 5,Great lecture,I liked the interactive parts the most.
+ST0001,Week 10,Lecture 4,Hard to understand,"Great session, learned a lot!"
+ST0010,Week 5,Lecture 4,Interactive session,"Fantastic lecture, well done!"
+ST0018,Week 7,Lecture 2,Too slow,"Great session, learned a lot!"
+ST0015,Week 7,Lecture 1,Very helpful,I think more visuals would be helpful.
+ST0001,Week 9,Lecture 3,Very helpful,I think more visuals would be helpful.
+ST0014,Week 8,Lecture 4,Too fast,I liked the interactive parts the most.
+ST0002,Week 1,Lecture 2,Hard to understand,"Great session, learned a lot!"
+ST0005,Week 5,Lecture 3,Great lecture,It was hard to follow along with the pace.
+ST0002,Week 5,Lecture 2,Hard to understand,Could use more real-world examples.
+ST0001,Week 2,Lecture 4,Interactive session,The lecture was a bit too fast for me.
+ST0010,Week 7,Lecture 4,Boring,It was hard to follow along with the pace.
+ST0019,Week 6,Lecture 2,Too slow,"Great session, learned a lot!"
+ST0009,Week 2,Lecture 3,Too fast,I liked the interactive parts the most.
+ST0015,Week 4,Lecture 4,Great lecture,I really enjoyed the hands-on examples.
+ST0006,Week 6,Lecture 5,Interactive session,I think more visuals would be helpful.
+ST0016,Week 2,Lecture 3,Very helpful,I liked the interactive parts the most.
+ST0016,Week 2,Lecture 2,Interactive session,The content was a bit dry.
+ST0012,Week 1,Lecture 4,Hard to understand,I think more visuals would be helpful.
+ST0017,Week 5,Lecture 1,Too slow,I really enjoyed the hands-on examples.
+ST0002,Week 5,Lecture 4,Informative,Could use more real-world examples.
+ST0020,Week 9,Lecture 3,Well explained,Could use more real-world examples.
+ST0003,Week 9,Lecture 5,Too slow,The examples were very clear and useful.
+ST0017,Week 1,Lecture 3,Well explained,I think more visuals would be helpful.
+ST0019,Week 8,Lecture 3,Too fast,The content was a bit dry.
+ST0018,Week 7,Lecture 3,Hard to understand,"Great session, learned a lot!"
+ST0012,Week 1,Lecture 1,Interactive session,The content was a bit dry.
+ST0010,Week 5,Lecture 1,Interactive session,I think more visuals would be helpful.
+ST0017,Week 3,Lecture 5,Interactive session,It was hard to follow along with the pace.
+ST0018,Week 4,Lecture 1,Informative,The lecture was a bit too fast for me.
+ST0008,Week 1,Lecture 1,Well explained,The content was a bit dry.
+ST0017,Week 10,Lecture 1,Could use more examples,The content was a bit dry.
+ST0020,Week 1,Lecture 1,Informative,Could use more real-world examples.
+ST0003,Week 1,Lecture 1,Could use more examples,The content was a bit dry.
+ST0008,Week 6,Lecture 3,Too fast,The content was a bit dry.
+ST0003,Week 6,Lecture 4,Boring,"Great session, learned a lot!"
