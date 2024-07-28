@@ -16,7 +16,10 @@ function AdminSidebar() {
         <Link to="/admin/home" className="hover:bg-gray-700 p-2 rounded">Home</Link>
         <Link to="/admin/aptitude-questions" className="hover:bg-gray-700 p-2 rounded">Aptitude Questions</Link>
         <Link to="/admin/dashboard" className="hover:bg-gray-700 p-2 rounded">Marks Dashboard</Link>
-        <Link to="/admin/portal" className='hover:bg-gray-700 p-2 rounded'>Query Portal</Link>
+        <Link to="/admin/portal" className="hover:bg-gray-700 p-2 rounded">Portal </Link>
+        <Link to="/admin/attendance" className="hover:bg-gray-700 p-2 rounded">Attendance Portal </Link>
+        <Link to="/heatmap" className="hover:bg-gray-700 p-2 rounded">Dropout alert </Link>
+
         <button onClick={handleLogout} className="hover:bg-gray-700 p-2 rounded">Logout</button>
       </nav>
     </div>
