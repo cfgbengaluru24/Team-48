@@ -8,6 +8,7 @@ const questionRoutes = require('./questionRoutes.js');
 const attendanceRoutes = require('./attendanceRoutes.js')
 const adminRoutes = require('./adminRoutes.js');
 const feedbackRoutes = require("./feedbackRoutes.js");
+const authRoutes = require('./authRoutes.js');
 
 const router = express.Router();
 
@@ -20,5 +21,6 @@ router.use('/questions', questionRoutes);
 router.use('/attendance',attendanceRoutes)
 router.use('/admin',adminRoutes);
 router.use('/feedback',feedbackRoutes);
+router.use('/auth',authRoutes);
 
 module.exports = router;
