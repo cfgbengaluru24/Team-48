@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import StudentHome from './components/StudentHome';
 import StudentAptitude from './components/StudentAptitude';
+import SuccessStories from "./components/Successstory";
 import StudentPlacement from './components/StudentPlacement';
 import StudentPortal from './components/StudentPortal';
 import AdminHome from './components/AdminHome';
