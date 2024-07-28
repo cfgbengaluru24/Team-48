@@ -1,5 +1,5 @@
 import React from "react";
-
+import AdminSidebar from "./AdminSideBar";
 // Sample data representing queries
 const queries = [
   {
@@ -36,6 +36,8 @@ const queries = [
 
 const AdminPortal = () => {
   return (
+    <div>
+    <AdminSidebar />
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-md">
       <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">
         Admin Query Management
@@ -78,6 +80,7 @@ const AdminPortal = () => {
             ))}
         </ul>
       </section>
+    </div>
     </div>
   );
 };
