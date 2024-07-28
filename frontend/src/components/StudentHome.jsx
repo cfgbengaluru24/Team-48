@@ -39,6 +39,7 @@ function StudentHome() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowModal(false);
+    console.log(formData);
   };
 
   const handleEdit = () => {
