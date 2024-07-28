@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import StudentLayout from './StudentLayout';
+import axios from 'axios';
 
 function StudentHome() {
   const [showModal, setShowModal] = useState(true);
@@ -36,9 +37,27 @@ function StudentHome() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     setShowModal(false);
+    console.log(formData);
+
+    const formDataToSend = new FormData();
+    for (const key in formData) {
+      formDataToSend.append(key, formData[key]);
+    }
+
+    try {
+      const response = await axios.patch('http://localhost:5000/api/students/update', formDataToSend, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      console.log('Data saved:', response.data);
+      setShowProfile(true);
+    } catch (error) {
+      console.error('Error saving data:', error);
+    }
   };
 
   const handleEdit = () => {

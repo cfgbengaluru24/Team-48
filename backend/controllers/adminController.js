@@ -1,10 +1,10 @@
-const Test = require('../models/Test');
-// const Student = require('../models/Student');
-const Query = require('../models/Query');
+const Test = require('../models/Test.js');
+const mongoose = require('mongoose');
+const Query = require('../models/Query.js');
 
 const getAllTestScores = async (req, res) => {
   try {
-    const tests = await Test.findMany();
+    const tests = await Test.find();
     res.json({
       success: true,
       message: "Here are all the tests scores",
@@ -21,7 +21,7 @@ const getQueryById = async (req, res) => {
   
 
       if (!mongoose.Types.ObjectId.isValid(queryId)) {
-        return res.status(400).json({ message: 'Invalid query ID format.' });
+        return res.status(400).json({success: true, message: 'Invalid query ID format.' });
       }
   
       
