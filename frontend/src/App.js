@@ -39,7 +39,7 @@ function App() {
 
           <Route path="/succes" element={<SuccessStories />} />
           <Route path="/heatmap" element={<HeatmapComponent />} />
-
+        
           {/* <Route path="/admin/portal" element={<AdminPortal />} /> */}
         </Routes>
       </div>

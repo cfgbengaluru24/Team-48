@@ -45,10 +45,10 @@ function AdminHome() {
           <div className="bg-white p-6 rounded-lg shadow-md mb-8">
             <h2 className="text-2xl font-semibold mb-4">Recent Activities</h2>
             <ul className="list-disc list-inside">
-              <li className="mb-2">User <strong>John Doe</strong> completed the <strong>Aptitude Test</strong>.</li>
-              <li className="mb-2">New user <strong>Jane Smith</strong> registered.</li>
+              <li className="mb-2">User <strong>priya </strong> completed the <strong>Aptitude Test</strong>.</li>
+              <li className="mb-2">New user <strong>jaya</strong> registered.</li>
               <li className="mb-2">System update applied on <strong>March 15, 2024</strong>.</li>
-              <li className="mb-2">User <strong>Sam Wilson</strong> started a new session.</li>
+              <li className="mb-2">User <strong>Sania</strong> started a new session.</li>
             </ul>
           </div>
 
