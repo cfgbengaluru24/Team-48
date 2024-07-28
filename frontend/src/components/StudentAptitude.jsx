@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import StudentLayout from './StudentLayout';
-import data from './data.json';
+import data from './aptitude.data.json';
 import ActiveTests from './ActiveTests';
 import SubmittedTests from './SubmittedTests';
 
